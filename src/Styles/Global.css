@@ -1,0 +1,40 @@
+@import-normalize;
+@import './Root.css';
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(var(--azul-escuro), var(--azul-claro));
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 3px;
+}
+body::-webkit-scrollbar-track {
+  background: linear-gradient(var(--azul-escuro), var(--azul-claro));
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--azul-claro);
+  border-radius: 20px;
+}
+
+@font-face {
+  font-family: "GandhiSansRegular";
+  src: local("GandhiSansRegular"),
+    url("Fonts/GandhiSans-Regular.otf") format(truetype);
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GandhiSansBold";
+  src: local("GandhiSansBold"),
+    url("Fonts/GandhiSans-Bold.otf") format(truetype);
+  font-weight: 700;
+  font-display: swap;
+}

@@ -1,0 +1,29 @@
+@import '../../Styles/Root.css';
+
+.tags {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--cor-do-texto);
+    font-family: var(--fonte-normal);
+    font-size: 16px; 
+}
+
+.tags p{
+    font-size: 1.25rem;
+}
+
+.tags .lista{
+    list-style: none;
+    width: 380px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tags .lista li{
+    background-color: var(--tag-color);
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
